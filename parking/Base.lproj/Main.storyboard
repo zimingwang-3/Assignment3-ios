@@ -276,8 +276,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPW-Z7-7yL">
-                                <rect key="frame" x="43" y="281" width="112" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License Plate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPW-Z7-7yL">
+                                <rect key="frame" x="43" y="281" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -393,8 +393,39 @@
                     <view key="view" contentMode="scaleToFill" id="87p-J1-vgy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: xxxxxxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHM-RZ-VMJ">
+                                <rect key="frame" x="101" y="307" width="212" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: xxxxx@xxx.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVf-wv-9Qj">
+                                <rect key="frame" x="63" y="383" width="288" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43P-aj-mCE">
+                                <rect key="frame" x="114" y="154" width="187" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qaW-9Z-tfg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="43P-aj-mCE" firstAttribute="leading" secondItem="qaW-9Z-tfg" secondAttribute="leading" constant="114" id="6bn-k3-N4a"/>
+                            <constraint firstItem="PHM-RZ-VMJ" firstAttribute="leading" secondItem="qaW-9Z-tfg" secondAttribute="leading" constant="101" id="CZP-OS-HSi"/>
+                            <constraint firstItem="PHM-RZ-VMJ" firstAttribute="top" secondItem="43P-aj-mCE" secondAttribute="bottom" constant="108" id="Tyh-6t-hPA"/>
+                            <constraint firstItem="HVf-wv-9Qj" firstAttribute="top" secondItem="PHM-RZ-VMJ" secondAttribute="bottom" constant="40" id="UaC-zq-D2b"/>
+                            <constraint firstItem="43P-aj-mCE" firstAttribute="top" secondItem="qaW-9Z-tfg" secondAttribute="top" constant="66" id="YdD-7o-Wl5"/>
+                            <constraint firstItem="qaW-9Z-tfg" firstAttribute="trailing" secondItem="HVf-wv-9Qj" secondAttribute="trailing" constant="63" id="iXZ-tI-ylC"/>
+                            <constraint firstItem="qaW-9Z-tfg" firstAttribute="trailing" secondItem="43P-aj-mCE" secondAttribute="trailing" constant="113" id="izX-F7-MeR"/>
+                            <constraint firstItem="qaW-9Z-tfg" firstAttribute="trailing" secondItem="PHM-RZ-VMJ" secondAttribute="trailing" constant="101" id="syA-OE-ghK"/>
+                            <constraint firstItem="HVf-wv-9Qj" firstAttribute="leading" secondItem="qaW-9Z-tfg" secondAttribute="leading" constant="63" id="uAY-GY-n2A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DEy-ej-eM6"/>
                 </viewController>
