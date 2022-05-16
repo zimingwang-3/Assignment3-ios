@@ -19,6 +19,9 @@
 		3D7ED0502830C37C00BA877B /* ParkingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */; };
 		3D7ED0522830C4B200BA877B /* ParkingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */; };
 		3D7ED0542830C94E00BA877B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D7ED0532830C94E00BA877B /* data.json */; };
+		C1C4577E28326D51000DAF26 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4577D28326D51000DAF26 /* OrderViewController.swift */; };
+		C1C45781283270B4000DAF26 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C45780283270B4000DAF26 /* BookingViewController.swift */; };
+		C1C45783283275DB000DAF26 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C45782283275DB000DAF26 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListViewController.swift; sourceTree = "<group>"; };
 		3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingItemTableViewCell.swift; sourceTree = "<group>"; };
 		3D7ED0532830C94E00BA877B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		C1C4577D28326D51000DAF26 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		C1C45780283270B4000DAF26 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		C1C45782283275DB000DAF26 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +111,13 @@
 		3D7ED01E2830B7DF00BA877B /* parking */ = {
 			isa = PBXGroup;
 			children = (
+				C1C4577F28326DC7000DAF26 /* Controller */,
 				3D7ED01F2830B7DF00BA877B /* AppDelegate.swift */,
 				3D7ED0212830B7DF00BA877B /* SceneDelegate.swift */,
-				3D7ED0232830B7DF00BA877B /* ViewController.swift */,
 				3D7ED0252830B7DF00BA877B /* Main.storyboard */,
 				3D7ED0282830B7E100BA877B /* Assets.xcassets */,
 				3D7ED02A2830B7E100BA877B /* LaunchScreen.storyboard */,
 				3D7ED02D2830B7E100BA877B /* Info.plist */,
-				3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */,
 				3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */,
 				3D7ED0532830C94E00BA877B /* data.json */,
 			);
@@ -134,6 +139,18 @@
 				3D7ED0422830B7E100BA877B /* parkingUITestsLaunchTests.swift */,
 			);
 			path = parkingUITests;
+			sourceTree = "<group>";
+		};
+		C1C4577F28326DC7000DAF26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D7ED0232830B7DF00BA877B /* ViewController.swift */,
+				3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */,
+				C1C4577D28326D51000DAF26 /* OrderViewController.swift */,
+				C1C45780283270B4000DAF26 /* BookingViewController.swift */,
+				C1C45782283275DB000DAF26 /* HelpViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +288,11 @@
 				3D7ED0242830B7DF00BA877B /* ViewController.swift in Sources */,
 				3D7ED0502830C37C00BA877B /* ParkingListViewController.swift in Sources */,
 				3D7ED0202830B7DF00BA877B /* AppDelegate.swift in Sources */,
+				C1C45783283275DB000DAF26 /* HelpViewController.swift in Sources */,
 				3D7ED0222830B7DF00BA877B /* SceneDelegate.swift in Sources */,
 				3D7ED0522830C4B200BA877B /* ParkingItemTableViewCell.swift in Sources */,
+				C1C45781283270B4000DAF26 /* BookingViewController.swift in Sources */,
+				C1C4577E28326D51000DAF26 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
