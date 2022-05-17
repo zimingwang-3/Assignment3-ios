@@ -1,37 +1,142 @@
 [
     {
         "name":"Parking Place A",
-        "address":"1 Ultimo 2000 Sydney NSW ",
+        "address":"1 Ultimo 2000 Sydney NSW",
         "status":"Opening",
-        "total":"500",
-        "remain":"300"
+        "total":"10",
+        "parkslots":[{
+            "id":"1",
+            "timeInterval":"0"
+        }, {"id":"2",
+            "timeInterval":"0"
+        }, {"id":"3",
+            "timeInterval":"0"
+        }, {"id":"4",
+            "timeInterval":"0"
+        }, {"id":"5",
+            "timeInterval":"0"
+        }, {"id":"6",
+            "timeInterval":"0"
+        }, {"id":"7",
+            "timeInterval":"0"
+        }, {"id":"8",
+            "timeInterval":"0"
+        }, {"id":"9",
+            "timeInterval":"0"
+        }, {"id":"10",
+            "timeInterval":"0"
+        }]
     },
     {
         "name":"Parking Place B",
-        "address":"2 Ultimo 2000 Sydney NSW ",
+        "address":"2 Ultimo 2000 Sydney NSW",
         "status":"Opening",
-        "total":"400",
-        "remain":"350"
+        "total":"10",
+        "parkslots":[{
+            "id":"1",
+            "timeInterval":"0"
+        }, {"id":"2",
+            "timeInterval":"0"
+        }, {"id":"3",
+            "timeInterval":"0"
+        }, {"id":"4",
+            "timeInterval":"0"
+        }, {"id":"5",
+            "timeInterval":"0"
+        }, {"id":"6",
+            "timeInterval":"0"
+        }, {"id":"7",
+            "timeInterval":"0"
+        }, {"id":"8",
+            "timeInterval":"0"
+        }, {"id":"9",
+            "timeInterval":"0"
+        }, {"id":"10",
+            "timeInterval":"0"
+        }]
     },
     {
         "name":"Parking Place C",
-        "address":"3 Ultimo 2000 Sydney NSW ",
+        "address":"3 Ultimo 2000 Sydney NSW",
         "status":"Opening",
-        "total":"450",
-        "remain":"360"
+        "total":"10",
+        "parkslots":[{
+            "id":"1",
+            "timeInterval":"0"
+        }, {"id":"2",
+            "timeInterval":"0"
+        }, {"id":"3",
+            "timeInterval":"0"
+        }, {"id":"4",
+            "timeInterval":"0"
+        }, {"id":"5",
+            "timeInterval":"0"
+        }, {"id":"6",
+            "timeInterval":"0"
+        }, {"id":"7",
+            "timeInterval":"0"
+        }, {"id":"8",
+            "timeInterval":"0"
+        }, {"id":"9",
+            "timeInterval":"0"
+        }, {"id":"10",
+            "timeInterval":"0"
+        }]
     },
     {
         "name":"Parking Place D",
-        "address":"4 Ultimo 2000 Sydney NSW ",
+        "address":"4 Ultimo 2000 Sydney NSW",
         "status":"Opening",
-        "total":"300",
-        "remain":"180"
+        "total":"10",
+        "parkslots":[{
+            "id":"1",
+            "timeInterval":"0"
+        }, {"id":"2",
+            "timeInterval":"0"
+        }, {"id":"3",
+            "timeInterval":"0"
+        }, {"id":"4",
+            "timeInterval":"0"
+        }, {"id":"5",
+            "timeInterval":"0"
+        }, {"id":"6",
+            "timeInterval":"0"
+        }, {"id":"7",
+            "timeInterval":"0"
+        }, {"id":"8",
+            "timeInterval":"0"
+        }, {"id":"9",
+            "timeInterval":"0"
+        }, {"id":"10",
+            "timeInterval":"0"
+        }]
     },
     {
         "name":"Parking Place E",
-        "address":"5 Ultimo 2000 Sydney NSW ",
+        "address":"5 Ultimo 2000 Sydney NSW",
         "status":"Opening",
-        "total":"500",
-        "remain":"350"
+        "total":"10",
+        "parkslots":[{
+            "id":"1",
+            "timeInterval":"0"
+        }, {"id":"2",
+            "timeInterval":"0"
+        }, {"id":"3",
+            "timeInterval":"0"
+        }, {"id":"4",
+            "timeInterval":"0"
+        }, {"id":"5",
+            "timeInterval":"0"
+        }, {"id":"6",
+            "timeInterval":"0"
+        }, {"id":"7",
+            "timeInterval":"0"
+        }, {"id":"8",
+            "timeInterval":"0"
+        }, {"id":"9",
+            "timeInterval":"0"
+        }, {"id":"10",
+            "timeInterval":"0"
+        }]
     }
 ]

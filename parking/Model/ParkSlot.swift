@@ -3,11 +3,9 @@ import Foundation
 class ParkSlot {
     let id = UUID().uuidString;
     var mTimeInterval:Int = 0b0;
-    var date:Date = Date.init();
     
-    
-    init () {
-        
+    init (timeInterval:Int) {
+        self.mTimeInterval = timeInterval;
     }
     
     func setUsed(times:[Int]) {
@@ -24,4 +22,13 @@ class ParkSlot {
         }
         return false;
     }
+    
+    func toJson() {
+        
+    }
+    
+    func toObj() {
+        
+    }
+    
 }
