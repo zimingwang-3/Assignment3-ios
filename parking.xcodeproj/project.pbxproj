@@ -7,21 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04E3B8DB283401120066FC88 /* ParkField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3B8DA283401120066FC88 /* ParkField.swift */; };
+		04E3B8DD283401430066FC88 /* ParkSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3B8DC283401430066FC88 /* ParkSlot.swift */; };
 		3D7ED0202830B7DF00BA877B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED01F2830B7DF00BA877B /* AppDelegate.swift */; };
 		3D7ED0222830B7DF00BA877B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0212830B7DF00BA877B /* SceneDelegate.swift */; };
 		3D7ED0242830B7DF00BA877B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0232830B7DF00BA877B /* ViewController.swift */; };
 		3D7ED0272830B7DF00BA877B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7ED0252830B7DF00BA877B /* Main.storyboard */; };
 		3D7ED0292830B7E100BA877B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7ED0282830B7E100BA877B /* Assets.xcassets */; };
 		3D7ED02C2830B7E100BA877B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7ED02A2830B7E100BA877B /* LaunchScreen.storyboard */; };
-		3D7ED0372830B7E100BA877B /* parkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0362830B7E100BA877B /* parkingTests.swift */; };
-		3D7ED0412830B7E100BA877B /* parkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0402830B7E100BA877B /* parkingUITests.swift */; };
-		3D7ED0432830B7E100BA877B /* parkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0422830B7E100BA877B /* parkingUITestsLaunchTests.swift */; };
 		3D7ED0502830C37C00BA877B /* ParkingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */; };
 		3D7ED0522830C4B200BA877B /* ParkingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */; };
 		3D7ED0542830C94E00BA877B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D7ED0532830C94E00BA877B /* data.json */; };
-		C1C4577E28326D51000DAF26 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4577D28326D51000DAF26 /* OrderViewController.swift */; };
-		C1C45781283270B4000DAF26 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C45780283270B4000DAF26 /* BookingViewController.swift */; };
-		C1C45783283275DB000DAF26 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C45782283275DB000DAF26 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04E3B8DA283401120066FC88 /* ParkField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkField.swift; sourceTree = "<group>"; };
+		04E3B8DC283401430066FC88 /* ParkSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkSlot.swift; sourceTree = "<group>"; };
 		3D7ED01C2830B7DF00BA877B /* parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7ED01F2830B7DF00BA877B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D7ED0212830B7DF00BA877B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,16 +49,10 @@
 		3D7ED02B2830B7E100BA877B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D7ED02D2830B7E100BA877B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D7ED0322830B7E100BA877B /* parkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D7ED0362830B7E100BA877B /* parkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingTests.swift; sourceTree = "<group>"; };
 		3D7ED03C2830B7E100BA877B /* parkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D7ED0402830B7E100BA877B /* parkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingUITests.swift; sourceTree = "<group>"; };
-		3D7ED0422830B7E100BA877B /* parkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListViewController.swift; sourceTree = "<group>"; };
 		3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingItemTableViewCell.swift; sourceTree = "<group>"; };
 		3D7ED0532830C94E00BA877B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		C1C4577D28326D51000DAF26 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
-		C1C45780283270B4000DAF26 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
-		C1C45782283275DB000DAF26 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +80,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E3B8D9283400FF0066FC88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E3B8DA283401120066FC88 /* ParkField.swift */,
+				04E3B8DC283401430066FC88 /* ParkSlot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E3B8DE283402910066FC88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D7ED0232830B7DF00BA877B /* ViewController.swift */,
+				3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */,
+				3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3D7ED0132830B7DF00BA877B = {
 			isa = PBXGroup;
 			children = (
 				3D7ED01E2830B7DF00BA877B /* parking */,
-				3D7ED0352830B7E100BA877B /* parkingTests */,
-				3D7ED03F2830B7E100BA877B /* parkingUITests */,
 				3D7ED01D2830B7DF00BA877B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,46 +120,17 @@
 		3D7ED01E2830B7DF00BA877B /* parking */ = {
 			isa = PBXGroup;
 			children = (
-				C1C4577F28326DC7000DAF26 /* Controller */,
+				04E3B8DE283402910066FC88 /* Controller */,
+				04E3B8D9283400FF0066FC88 /* Model */,
 				3D7ED01F2830B7DF00BA877B /* AppDelegate.swift */,
 				3D7ED0212830B7DF00BA877B /* SceneDelegate.swift */,
 				3D7ED0252830B7DF00BA877B /* Main.storyboard */,
 				3D7ED0282830B7E100BA877B /* Assets.xcassets */,
 				3D7ED02A2830B7E100BA877B /* LaunchScreen.storyboard */,
 				3D7ED02D2830B7E100BA877B /* Info.plist */,
-				3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */,
 				3D7ED0532830C94E00BA877B /* data.json */,
 			);
 			path = parking;
-			sourceTree = "<group>";
-		};
-		3D7ED0352830B7E100BA877B /* parkingTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D7ED0362830B7E100BA877B /* parkingTests.swift */,
-			);
-			path = parkingTests;
-			sourceTree = "<group>";
-		};
-		3D7ED03F2830B7E100BA877B /* parkingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3D7ED0402830B7E100BA877B /* parkingUITests.swift */,
-				3D7ED0422830B7E100BA877B /* parkingUITestsLaunchTests.swift */,
-			);
-			path = parkingUITests;
-			sourceTree = "<group>";
-		};
-		C1C4577F28326DC7000DAF26 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3D7ED0232830B7DF00BA877B /* ViewController.swift */,
-				3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */,
-				C1C4577D28326D51000DAF26 /* OrderViewController.swift */,
-				C1C45780283270B4000DAF26 /* BookingViewController.swift */,
-				C1C45782283275DB000DAF26 /* HelpViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +268,10 @@
 				3D7ED0242830B7DF00BA877B /* ViewController.swift in Sources */,
 				3D7ED0502830C37C00BA877B /* ParkingListViewController.swift in Sources */,
 				3D7ED0202830B7DF00BA877B /* AppDelegate.swift in Sources */,
-				C1C45783283275DB000DAF26 /* HelpViewController.swift in Sources */,
 				3D7ED0222830B7DF00BA877B /* SceneDelegate.swift in Sources */,
+				04E3B8DB283401120066FC88 /* ParkField.swift in Sources */,
+				04E3B8DD283401430066FC88 /* ParkSlot.swift in Sources */,
 				3D7ED0522830C4B200BA877B /* ParkingItemTableViewCell.swift in Sources */,
-				C1C45781283270B4000DAF26 /* BookingViewController.swift in Sources */,
-				C1C4577E28326D51000DAF26 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7ED0372830B7E100BA877B /* parkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7ED0412830B7E100BA877B /* parkingUITests.swift in Sources */,
-				3D7ED0432830B7E100BA877B /* parkingUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
