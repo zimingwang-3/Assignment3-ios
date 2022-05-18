@@ -1,55 +1,62 @@
 import Foundation
+import UIKit
 
 class ParkField {
     let mName:String;
     let mAddress:String;
     var mStatus:Bool = true;
     var mTotalSlot:Int = 0;
-    var mParkSlots:[ParkSlot] = [];
+    var mParkSlots:[Int] = [];
     
     init (name:String, address:String, status:Bool, totalSlot:Int) {
         self.mName = name;
         self.mAddress = address;
         self.mStatus = status;
         self.mTotalSlot = totalSlot;
-        self.mParkSlots = [ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0),
-                           ParkSlot(timeInterval: 0)];
+//        self.mParkSlots = [ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0),
+//                           ParkSlot(timeInterval: 0)];
+        self.mParkSlots = [0b0,0b0,0b0,0b0,0b0,
+                           0b0,0b0,0b0,0b0,0b0];
     }
     
     //return the number of empty slots that after users select time
-    func remainCount(date:Date, intervals:[Int]) -> Int {
+    func remainCount(intervals:[Int]) -> Int {
         var result:Int = 0;
         for slot in mParkSlots {
-            if (!slot.isUsed(times: intervals)) {
-                result += 1;
+            for i in intervals {
+                if ((slot & 1 << i) != slot) {
+                    result += 1;
+                }
             }
         }
         return result;
     }
-    
     //set slots value after users confirm
-    func bookSlot(date:Date, intervals:[Int]) {
-        for slot in mParkSlots {
-            if (!slot.isUsed(times: intervals)) {
-                slot.setUsed(times: intervals);
+    func bookSlot(date:String, intervals:[Int]) {
+        for i:Int in 0...mParkSlots.count-1 {
+            for j in intervals {
+                mParkSlots[i] |= 1 << j;
             }
         }
     }
     
-    func toJson() {
-        let data = try? JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted)
-        let strJson = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+    func toJson(date:String) {
+        let url = Bundle.main.url(forResource: date, withExtension: "json");
+        let data = NSData(contentsOf: url!);
     }
     
-    func toObj() {
+    func toObj(date:String) {
+
         
     }
+    
+
 }
