@@ -13,16 +13,6 @@ class ParkField {
         self.mAddress = address;
         self.mStatus = status;
         self.mTotalSlot = totalSlot;
-//        self.mParkSlots = [ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0),
-//                           ParkSlot(timeInterval: 0)];
         self.mParkSlots = [0b0,0b0,0b0,0b0,0b0,
                            0b0,0b0,0b0,0b0,0b0];
     }

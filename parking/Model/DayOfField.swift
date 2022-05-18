@@ -49,12 +49,12 @@ class DayOfField: Codable{
 //                try? encodedData.write(to: url!, options: .noFileProtection)
 //            }
 //        }
-        let encodedData = try? Data(contentsOf: url!)
-        
-        guard try? JSONDecoder().decode([DayOfField].self, from: encodedData) else {}
-        
-        
-        
+//        let encodedData = try? Data(contentsOf: url!)
+//
+//        guard try? JSONDecoder().decode([DayOfField].self, from: encodedData) else {}
+//
+//
+//
     }
     
 }
