@@ -19,6 +19,8 @@
 		3D7ED0502830C37C00BA877B /* ParkingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */; };
 		3D7ED0522830C4B200BA877B /* ParkingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */; };
 		3D7ED0542830C94E00BA877B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D7ED0532830C94E00BA877B /* data.json */; };
+		C12A73B528369FD100D21E4C /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A73B428369FD100D21E4C /* ReservationViewController.swift */; };
+		C12A73B72836A00500D21E4C /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A73B62836A00500D21E4C /* ReservationTableViewCell.swift */; };
 		C18CEEF02834FEF3007FFEA0 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CEEEF2834FEF3007FFEA0 /* BookingViewController.swift */; };
 		C18CEEF22834FF7F007FFEA0 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CEEF12834FF7F007FFEA0 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		3D7ED04F2830C37C00BA877B /* ParkingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListViewController.swift; sourceTree = "<group>"; };
 		3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingItemTableViewCell.swift; sourceTree = "<group>"; };
 		3D7ED0532830C94E00BA877B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		C12A73B428369FD100D21E4C /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		C12A73B62836A00500D21E4C /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		C18CEEEF2834FEF3007FFEA0 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		C18CEEF12834FF7F007FFEA0 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,8 @@
 				3D7ED0512830C4B200BA877B /* ParkingItemTableViewCell.swift */,
 				C18CEEEF2834FEF3007FFEA0 /* BookingViewController.swift */,
 				C18CEEF12834FF7F007FFEA0 /* HelpViewController.swift */,
+				C12A73B428369FD100D21E4C /* ReservationViewController.swift */,
+				C12A73B62836A00500D21E4C /* ReservationTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,12 +282,14 @@
 			files = (
 				3D7ED0242830B7DF00BA877B /* ViewController.swift in Sources */,
 				C18CEEF02834FEF3007FFEA0 /* BookingViewController.swift in Sources */,
+				C12A73B72836A00500D21E4C /* ReservationTableViewCell.swift in Sources */,
 				3D7ED0502830C37C00BA877B /* ParkingListViewController.swift in Sources */,
 				04E3B8E028340F610066FC88 /* DayOfField.swift in Sources */,
 				3D7ED0202830B7DF00BA877B /* AppDelegate.swift in Sources */,
 				3D7ED0222830B7DF00BA877B /* SceneDelegate.swift in Sources */,
 				04E3B8DB283401120066FC88 /* ParkField.swift in Sources */,
 				04E3B8DD283401430066FC88 /* ParkSlot.swift in Sources */,
+				C12A73B528369FD100D21E4C /* ReservationViewController.swift in Sources */,
 				3D7ED0522830C4B200BA877B /* ParkingItemTableViewCell.swift in Sources */,
 				C18CEEF22834FF7F007FFEA0 /* HelpViewController.swift in Sources */,
 			);
