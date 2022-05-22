@@ -1,12 +1,16 @@
 import Foundation
 
+protocol Codable {
+    func toJson<Object>()throws where Object: Encodable;
+    func toObj<Object>()throws where Object: Decodable;
+}
+
 class DayOfField: Codable{
     var mAllParkFields:[ParkField];
     var mDate:String;
     //var dateFormatter:DateFormatter = "YYMMDD";
-    
+
     init() {
-        self.mDate = date;
         self.mAllParkFields = [ParkField(name: "Parking Place A",
                                          address: "1 Ultimo 2000 Sydney NSW",
                                          status: true,
@@ -30,31 +34,15 @@ class DayOfField: Codable{
                                ]
     }
     
-    func toJson(date:String) {
-        let url = Bundle.main.url(forResource: date, withExtension: "json");
-        if let encodedData = try? JSONEncoder().encode(self) {
-
-        }
+    func toJson<Object>() -> throw {
+        let encoder = JSONEncoder();
+        let data = try! encoder.encode(self);
+        
         
     }
     
-    func toObj(date:String) {
-        let url = Bundle.main.url(forResource: "Data", withExtension: "json");
-//        let fileManager = FileManager.default;
-//        if fileManager.fileExists(atPath: date+".json") {
-//
-//        } else {
-//            fileManager.createFile(atPath: date+".json", contents: nil, attributes: nil);
-//            if let encodedData = try? JSONEncoder().encode(self) {
-//                try? encodedData.write(to: url!, options: .noFileProtection)
-//            }
-//        }
-//        let encodedData = try? Data(contentsOf: url!)
-//
-//        guard try? JSONDecoder().decode([DayOfField].self, from: encodedData) else {}
-//
-//
-//
+    func toObj<Object>() -> throw{
+
     }
     
 }
