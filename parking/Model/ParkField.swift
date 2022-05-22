@@ -30,18 +30,20 @@ class ParkField {
         return result;
     }
     //set slots value after users confirm
-    func bookSlot(intervals:[Int]) {
+    func bookSlot(intervals:Int) {
         for i:Int in 0...mParkSlots.count-1 {
-            for j in intervals {
-                mParkSlots[i] |= (1 << j);
+            if ((mParkSlots[i] & 1 << intervals) != mParkSlots[i]) {
+                mParkSlots[i] |= (1 << intervals);
+                break;
             }
         }
     }
     
-    func cancelSlot(intervals:[Int]) {
+    func cancelSlot(intervals:Int) {
         for i:Int in 0...mParkSlots.count-1 {
-            for j in intervals {
-                mParkSlots[i] ^= (1 << j);
+            if ((mParkSlots[i] & 1 << intervals) == mParkSlots[i]) {
+                mParkSlots[i] ^= (1 << intervals);
+                break;
             }
         }
     }
