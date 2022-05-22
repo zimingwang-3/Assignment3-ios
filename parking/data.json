@@ -1,142 +1,37 @@
 [
     {
-        "name":"Parking Place A",
-        "address":"1 Ultimo 2000 Sydney NSW",
-        "status":"Opening",
-        "total":"10",
-        "parkslots":[{
-            "id":"1",
-            "timeInterval":"0"
-        }, {"id":"2",
-            "timeInterval":"0"
-        }, {"id":"3",
-            "timeInterval":"0"
-        }, {"id":"4",
-            "timeInterval":"0"
-        }, {"id":"5",
-            "timeInterval":"0"
-        }, {"id":"6",
-            "timeInterval":"0"
-        }, {"id":"7",
-            "timeInterval":"0"
-        }, {"id":"8",
-            "timeInterval":"0"
-        }, {"id":"9",
-            "timeInterval":"0"
-        }, {"id":"10",
-            "timeInterval":"0"
-        }]
+        "mName":"Parking Place A",
+        "mAddress":"1 Ultimo 2000 Sydney NSW",
+        "mStatus":"Opening",
+        "mTotal":"10",
+        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
     },
     {
-        "name":"Parking Place B",
-        "address":"2 Ultimo 2000 Sydney NSW",
-        "status":"Opening",
-        "total":"10",
-        "parkslots":[{
-            "id":"1",
-            "timeInterval":"0"
-        }, {"id":"2",
-            "timeInterval":"0"
-        }, {"id":"3",
-            "timeInterval":"0"
-        }, {"id":"4",
-            "timeInterval":"0"
-        }, {"id":"5",
-            "timeInterval":"0"
-        }, {"id":"6",
-            "timeInterval":"0"
-        }, {"id":"7",
-            "timeInterval":"0"
-        }, {"id":"8",
-            "timeInterval":"0"
-        }, {"id":"9",
-            "timeInterval":"0"
-        }, {"id":"10",
-            "timeInterval":"0"
-        }]
+        "mName":"Parking Place B",
+        "mAddress":"2 Ultimo 2000 Sydney NSW",
+        "mStatus":"Opening",
+        "mTotal":"10",
+        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
     },
     {
-        "name":"Parking Place C",
-        "address":"3 Ultimo 2000 Sydney NSW",
-        "status":"Opening",
-        "total":"10",
-        "parkslots":[{
-            "id":"1",
-            "timeInterval":"0"
-        }, {"id":"2",
-            "timeInterval":"0"
-        }, {"id":"3",
-            "timeInterval":"0"
-        }, {"id":"4",
-            "timeInterval":"0"
-        }, {"id":"5",
-            "timeInterval":"0"
-        }, {"id":"6",
-            "timeInterval":"0"
-        }, {"id":"7",
-            "timeInterval":"0"
-        }, {"id":"8",
-            "timeInterval":"0"
-        }, {"id":"9",
-            "timeInterval":"0"
-        }, {"id":"10",
-            "timeInterval":"0"
-        }]
+        "mName":"Parking Place C",
+        "mAddress":"3 Ultimo 2000 Sydney NSW",
+        "mStatus":"Opening",
+        "mTotal":"10",
+        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
     },
     {
-        "name":"Parking Place D",
-        "address":"4 Ultimo 2000 Sydney NSW",
-        "status":"Opening",
-        "total":"10",
-        "parkslots":[{
-            "id":"1",
-            "timeInterval":"0"
-        }, {"id":"2",
-            "timeInterval":"0"
-        }, {"id":"3",
-            "timeInterval":"0"
-        }, {"id":"4",
-            "timeInterval":"0"
-        }, {"id":"5",
-            "timeInterval":"0"
-        }, {"id":"6",
-            "timeInterval":"0"
-        }, {"id":"7",
-            "timeInterval":"0"
-        }, {"id":"8",
-            "timeInterval":"0"
-        }, {"id":"9",
-            "timeInterval":"0"
-        }, {"id":"10",
-            "timeInterval":"0"
-        }]
+        "mName":"Parking Place D",
+        "mAddress":"4 Ultimo 2000 Sydney NSW",
+        "mStatus":"Opening",
+        "mTotal":"10",
+        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
     },
     {
-        "name":"Parking Place E",
-        "address":"5 Ultimo 2000 Sydney NSW",
-        "status":"Opening",
-        "total":"10",
-        "parkslots":[{
-            "id":"1",
-            "timeInterval":"0"
-        }, {"id":"2",
-            "timeInterval":"0"
-        }, {"id":"3",
-            "timeInterval":"0"
-        }, {"id":"4",
-            "timeInterval":"0"
-        }, {"id":"5",
-            "timeInterval":"0"
-        }, {"id":"6",
-            "timeInterval":"0"
-        }, {"id":"7",
-            "timeInterval":"0"
-        }, {"id":"8",
-            "timeInterval":"0"
-        }, {"id":"9",
-            "timeInterval":"0"
-        }, {"id":"10",
-            "timeInterval":"0"
-        }]
+        "mName":"Parking Place E",
+        "mAddress":"5 Ultimo 2000 Sydney NSW",
+        "mStatus":"Opening",
+        "mTotal":"10",
+        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
     }
 ]
