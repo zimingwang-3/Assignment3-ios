@@ -9,16 +9,17 @@ import Foundation
 import UIKit
 
 class BookingViewController: UIViewController {
-    
     @IBOutlet weak var parkingDateField: UITextField!
     @IBOutlet weak var parkingTimeButton: UIButton!
     
+    @IBOutlet weak var licenceField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
+    @IBOutlet weak var firstNameField: UITextField!
     let datePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         creatDatePicker()
         setParkingTimeButton()
         
@@ -45,6 +46,13 @@ class BookingViewController: UIViewController {
         
     }
     
+    @IBAction func reserveClick(_ sender: Any) {
+        let vc :ParkingListViewController =  UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ParkingListViewController") as! ParkingListViewController
+        vc.user = User.init(firstName: firstNameField.text ?? "", lastName: lastNameField.text ?? "", licencesPlate: licenceField.text ?? "", id: Int(Date().timeIntervalSince1970))
+        vc.time = parkingTimeButton.titleLabel!.text!
+        vc.date = parkingDateField.text ?? ""
+        self.navigationController?.pushViewController(vc , animated: true)
+    }
     @objc func donePressed() {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium

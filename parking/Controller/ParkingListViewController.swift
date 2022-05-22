@@ -7,51 +7,39 @@
 
 import UIKit
 
+func alert(msg:String,controller:UIViewController,okHandler: ((UIAlertAction) -> Void)? = nil){
+    let  alertController =  UIAlertController (title:  "" ,
+                                               message:  msg , preferredStyle: .alert )
+    let  okAction =  UIAlertAction (title:  "ok" , style: .default ,
+                                    handler: okHandler)
+    alertController.addAction(okAction)
+    controller.present(alertController, animated:  true , completion:  nil )
+}
+
+
 class ParkingListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    struct ParkingPlace:Decodable {
-        var name:String
-        var address:String
-        var status:String
-        var total:String
-        var remain:String
-    }
-    
-    var parkList = [ParkingPlace]()
-    
+    var user:User!
+    var parkList = [ParkField]()
+    var selectedIndex = 0
+    var time:String!
+    var date:String!
     
     @IBOutlet weak var list: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let jsonData = readLocalJSONFile(forName: "data")!
-        parkList = parseData(info: jsonData)
+        parkList = DataHelper.getParks()
+        
         list.delegate = self
         list.dataSource = self
-    }
-    
-    func parseData(info:Data) -> [ParkingPlace]{
-        do {
-            let decodedData = try JSONDecoder().decode([ParkingPlace].self, from: info)
-            return decodedData
-        }catch{
-            print(error)
-        }
-        return []
+        list.reloadData()
     }
     
     
-    func readLocalJSONFile(forName name: String) -> Data? {
-        do {
-            if let filePath = Bundle.main.path(forResource: name, ofType: "json") {
-                let fileUrl = URL(fileURLWithPath: filePath)
-                let data = try Data(contentsOf: fileUrl)
-                return data
-            }
-        } catch {
-            print("error: \(error)")
-        }
-        return nil
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedIndex = indexPath.row
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,23 +49,41 @@ class ParkingListViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "parkItem", for: indexPath) as! ParkingItemTableViewCell
         let item = parkList[indexPath.row]
-        cell.name.text = item.name
-        cell.address.text = item.address
-        cell.status.text = item.status
-        cell.total.text = item.total
-        cell.remain.text = item.remain
+        cell.name.text = item.mName
+        cell.address.text = item.mAddress
+        cell.status.text = item.mStatus
+        cell.total.text = "\(item.mTotal!)"
+        let remain = item.remainCount()
+        cell.remain.text = "\(remain)"
         return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func bookingClick(_ sender: Any) {
+        let remainCount =  parkList[selectedIndex].remainCount()
+        if remainCount == 0{
+            alert(msg: "no remain", controller: self)
+            return
+        }
+        parkList[selectedIndex].bookSlot()
+        let reveration =  Revervation.init(park: parkList[selectedIndex], user: user, date: date,time: time)
+        var reverations =  DataHelper.getReveration()
+        reverations.append(reveration)
+        DataHelper.refreshParks(parks: parkList)
+        DataHelper.refreshReverations(reverations: reverations)
+        alert(msg: "success", controller: self) { action  in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        
     }
-    */
-
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

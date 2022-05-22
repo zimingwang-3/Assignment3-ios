@@ -3,35 +3,40 @@
         "mName":"Parking Place A",
         "mAddress":"1 Ultimo 2000 Sydney NSW",
         "mStatus":"Opening",
-        "mTotal":"10",
-        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
+        "mTotal":"11",
+        "mId":1,
+        "mParkslots":[0,0,0,0,0,0,0,0,0,0,0]
     },
     {
         "mName":"Parking Place B",
         "mAddress":"2 Ultimo 2000 Sydney NSW",
         "mStatus":"Opening",
-        "mTotal":"10",
-        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
+        "mTotal":"11",
+        "mId":2,
+        "mParkslots":[0,0,0,0,0,0,0,0,0,0,0]
     },
     {
         "mName":"Parking Place C",
         "mAddress":"3 Ultimo 2000 Sydney NSW",
         "mStatus":"Opening",
-        "mTotal":"10",
-        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
+        "mTotal":"11",
+        "mId":3,
+        "mParkslots":[0,0,0,0,0,0,0,0,0,0,0]
     },
     {
         "mName":"Parking Place D",
         "mAddress":"4 Ultimo 2000 Sydney NSW",
         "mStatus":"Opening",
-        "mTotal":"10",
-        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
+        "mTotal":"11",
+        "mId":4,
+        "mParkslots":[0,0,0,0,0,0,0,0,0,0,0]
     },
     {
         "mName":"Parking Place E",
         "mAddress":"5 Ultimo 2000 Sydney NSW",
         "mStatus":"Opening",
-        "mTotal":"10",
-        "mParkslots":"[0,0,0,0,0,0,0,0,0,0]"
+        "mTotal":"11",
+        "mId":5,
+        "mParkslots":[0,0,0,0,0,0,0,0,0,0,0]
     }
 ]
